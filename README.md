@@ -20,8 +20,8 @@
 
 1. Клонируйте репозиторий:
 ```commandline
-git clone https://github.com/your-username/image-analyzer.git
-cd image-analyzer
+git clone https://github.com/mryrtry/alg-comp-graph-1.git
+cd alg-comp-graph-1
 ```
 
 2. Установите зависимости:
