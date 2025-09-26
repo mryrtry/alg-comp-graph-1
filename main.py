@@ -18,6 +18,7 @@ def main():
     root = tk.Tk()
     root.title("Анализатор изображений с гистограммой RGB")
     root.geometry("1000x700")
+    root.resizable(False, False)
     root.minsize(800, 600)
 
     # Создание менеджеров
