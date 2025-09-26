@@ -19,23 +19,23 @@
 ## 📦 Установка
 
 1. Клонируйте репозиторий:
-```bash
+```commandline
 git clone https://github.com/your-username/image-analyzer.git
 cd image-analyzer
 ```
 
 2. Установите зависимости:
-```bash
+```commandline
 pip install -r requirements.txt
 ```
 
 3. Создайте папку для изображений:
-```bash
+```commandline
 mkdir images
 ```
 
 4. Запуск:
-```bash
+```commandline
 python main.py
 ```
 
