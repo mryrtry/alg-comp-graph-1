@@ -130,14 +130,6 @@ class MainApplication:
         )
         self.load_image_btn.pack(side=tk.LEFT)
 
-        # Кнопка "Обновить"
-        self.refresh_btn = ttk.Button(
-            button_frame,
-            text="Обновить отображение",
-            command=self.update_display
-        )
-        self.refresh_btn.pack(side=tk.RIGHT)
-
     def switch_image(self):
         """
         Обрабатывает нажатие кнопки смены изображения.
