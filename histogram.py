@@ -102,9 +102,25 @@ class HistogramManager:
         # Добавляем значения на столбцы
         for bar, percentage, value in zip(bars, percentages, values):
             height = bar.get_height()
-            ax.text(bar.get_x() + bar.get_width() / 2., height + 1,
-                    f'{percentage:.1f}%\n({value})',
-                    ha='center', va='bottom', fontsize=9)
+            if height < 10:
+                y_pos = height + 2
+                color = 'black'
+                va = 'bottom'
+            else:
+                y_pos = height / 2
+                color = 'white'
+                va = 'center'
+
+            ax.text(
+                bar.get_x() + bar.get_width() / 2.,
+                y_pos,
+                f'{percentage:.1f}%\n({value})',
+                ha='center',
+                va=va,
+                fontsize=9,
+                color=color,
+                fontweight='bold'
+            )
 
         # Добавляем сетку для лучшей читаемости
         ax.grid(True, alpha=0.3, axis='y')
