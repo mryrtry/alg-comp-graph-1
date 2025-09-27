@@ -55,7 +55,6 @@ class HistogramManager:
         # Вычисляем количество пикселей каждого канала
         total_pixels = r_channel.size
 
-        # Для упрощения считаем пиксели со значением > 128 как "активные"
         r_pixels = np.sum(r_channel > 128)
         g_pixels = np.sum(g_channel > 128)
         b_pixels = np.sum(b_channel > 128)

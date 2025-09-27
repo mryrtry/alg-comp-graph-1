@@ -41,8 +41,6 @@ class ImageManager:
         # Создаем папку images если её нет
         if not os.path.exists("images"):
             os.makedirs("images")
-            # Здесь можно добавить создание тестовых изображений
-            # или сообщить пользователю о необходимости добавить изображения
 
         # Ищем изображения в папке
         image_extensions = ('.png', '.jpg', '.jpeg', '.bmp', '.gif')
